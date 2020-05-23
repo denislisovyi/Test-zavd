@@ -1,0 +1,317 @@
+*{
+	margin: 0;
+}
+@font-face {
+    font-family: oldnewspapertypes; 
+    src: url(fonts/oldnewspapertypes.ttf);
+}
+@font-face {
+    font-family: nv; 
+    src: url(fonts/NV.ttf);
+}
+@font-face {
+    font-family: AbrilFatface-Regulars; 
+    src: url(fonts/AbrilFatface-Regular.ttf);
+}
+@font-face {
+    font-family: averiaserif-italic; 
+    src: url(fonts/averiaserif-italic.ttf);
+}
+@font-face {
+    font-family: Righteous-Regular; 
+    src: url(fonts/Righteous-Regular.ttf);
+}
+@font-face {
+    font-family: FrancoisOne-Regular; 
+    src: url(fonts/FrancoisOne-Regular.ttf);
+}
+.container{
+	width:100%;
+	min-width: 320px;
+	max-width: 1360px;
+	background-position: center;
+	background-image: url("1.jpg"); 
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns:50% auto auto;
+    grid-template-rows:118px 30px auto auto auto auto auto;
+    overflow-x: hidden;
+}
+.zagolovok{
+	border-top:2px solid brown;
+	margin-top: 15px;
+	grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    border-bottom:2px solid brown;
+    justify-content: center;
+    
+}
+.first{
+	width:20%;
+	height:100px;
+	font-family: oldnewspapertypes; 
+}
+.center{
+	width:60% ;
+    height:100px;
+}
+.second{
+	width:20%;
+	height:100px;	
+}
+.h_zagolovok{
+	font-size: 13px;
+	text-align: center;
+	margin-top: 10px;
+}
+.p_zagolovok{
+   font-size: 11px;
+   text-align: center;
+   font-family: oldnewspapertypes; 
+}
+.p_zagolovok_pidpis{
+   font-size: 6px;
+   text-align: center;
+}
+.p_podpis{
+	font-family: oldnewspapertypes; 
+	text-align: center;
+}
+.center_zagolovok{
+    font-size: 25pt;
+	font-family: nv;
+	margin-top: 30px;
+	text-align: center; 
+}
+.first_zagolovok{
+	margin-top: 10px;
+}
+.podpis{
+	grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    border-bottom: 2px solid brown;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+.podpis_word{
+	font-family: averiaserif-italic;
+}
+.main{
+	grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 8;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+}
+.block_main{
+	height: 1000px;
+}
+.left{
+	width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.right{
+	width: 20%;
+    height: auto;
+}
+.center{
+	width: 20%;
+    height: auto;
+}
+.odin{
+	display: grid;
+	grid-template-columns:30% 35% 35%;
+    grid-template-rows:25% 200px 300px
+    height: 500px;
+    border-bottom: 5px double brown;
+}
+.h_podpis{
+	grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 28px;
+}
+h2{
+	font-family: AbrilFatface-Regulars; 
+}
+.left_image{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-image: url(2.jpg);
+    background-size: cover;	
+    background-position: center;
+    margin-left: 30px;
+    width: 400px;
+    height: 200px;
+}
+.h_p_podpis{
+	font-family: Righteous-Regula; 
+}
+.left_text{
+	grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.left_text_odin_last{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;	
+}
+.dva{
+	display: grid;
+	grid-template-columns:30% 35% 35%;
+    grid-template-rows:18% 100px 200px 100px;
+    height: 600px;
+}
+.img_left_second{
+	grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;	
+    background-image:url(2.png);
+    background-position: center;
+    background-size: cover;
+}
+.left_text_dva{
+	grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    font-family: oldnewspapertypes; 
+	text-align: center;
+}
+.left_text_dva_last{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    font-family: oldnewspapertypes; 
+	text-align: center;	
+}
+.tri{
+	display: grid;
+	grid-template-columns:70% 30%;
+    grid-template-rows:75px 200px;
+    position: relative;
+    bottom:100px;
+    margin-bottom: 0;
+    position: relative;
+}
+.img_left_tri{
+	background-image: url(2.jpg);
+	background-position: center;
+	background-size: cover;
+	grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.h_podpis{
+	text-align: center;
+}
+.h3_tri{
+	border-top:2px solid brown;
+	border-bottom: 2px solid brown;
+	font-family: Righteous-Regula;
+	grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2; 
+    font-size: 20px;
+    text-align: center;
+}
+.left_text_tri{
+	grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    position: relative;
+    bottom:40px;
+    text-align: justify;
+}
+.left_text_tri .p_podpis{
+	text-align: justify;
+}
+.center{
+	display: flex;
+	flex-direction: column;
+}
+.h2_center{
+	text-align: center;
+}
+.center_second_h3{
+	text-align: center;
+	border-bottom: 2px solid brown;
+	border-top: 2px solid brown;
+	font-family: oldnewspapertypes;
+}
+.center_second_h3_dark{
+	text-align: center;
+	font-family: Righteous-Regula;
+    text-transform: uppercase;
+    color: #FFF;
+    mix-blend-mode: multiply;
+    display: inline-block;
+    background-color: brown;
+    width: 100%;
+    font-size: 20px;
+}
+.h2_center_number{
+	text-align: center;
+}
+.h3_center_number{
+	text-align: center;
+}
+.img_center{
+	position: relative;
+    bottom:10px;
+    height: 300px;
+}
+.right{
+	display: flex;
+	flex-direction: column;
+}
+.right_img{
+	height: 300px;
+	width: 200px;
+	text-align: center;
+}
+.right_second_h3{
+	text-align: justify;
+	border-bottom: 2px solid brown;
+	border-top: 2px solid brown;
+	font-family: oldnewspapertypes;
+	margin-right: 10px;
+}
+.p_right{
+	margin-right: 10px;
+	width: 200px;
+	border-bottom:2px double brown;
+}
+.last_zag{
+	font-family: FrancoisOne-Regular;
+	text-align: center; 
+}
+.without_border{
+	border:none;
+}
